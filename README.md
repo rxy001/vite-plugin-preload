@@ -13,7 +13,7 @@ npm i @x1ngyu/vite-plugin-preload -D
 ## Usage
 
 ```js
-import vitePluginPreload from "vite-plugin-preload"
+import preload from "vite-plugin-preload"
 
 defineConfig({
   plugins: [preload()],
