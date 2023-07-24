@@ -21,6 +21,6 @@ export default () =>
       }),
       nodeResolve(),
       commonjs(),
-      terser()
+      terser(),
     ],
   })

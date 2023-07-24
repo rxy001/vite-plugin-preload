@@ -1,16 +1,21 @@
 {
-  "name": "@x1ngYu/vite-plugin-preload",
+  "name": "@x1ngyu/vite-plugin-preload",
   "version": "1.0.0",
   "description": "",
   "license": "MIT",
   "type": "module",
-  "keywords": [],
+  "keywords": [
+    "vite-plugin-preload"
+  ],
   "author": "XingYu",
   "engines": {
     "node": ">=18.0.0"
   },
+  "files": [
+    "build"
+  ],
+  "main": "build/app.js",
   "scripts": {
-    "dev": "ts-node-esm ./src/app.ts",
     "build": "tsc --noEmit && rollup --config rollup.config.ts --configPlugin typescript",
     "prettier": "prettier -c --write ./src",
     "lint": "eslint . --ext .ts --max-warnings=0"
@@ -20,6 +25,7 @@
     "@commitlint/config-conventional": "^17.6.7",
     "@rollup/plugin-commonjs": "^25.0.3",
     "@rollup/plugin-node-resolve": "^15.1.0",
+    "@rollup/plugin-terser": "^0.4.3",
     "@rollup/plugin-typescript": "^11.1.2",
     "@types/node": "^20.4.4",
     "@typescript-eslint/eslint-plugin": "^6.1.0",
@@ -34,6 +40,7 @@
     "rollup": "^3.26.3",
     "ts-node": "^10.9.1",
     "tslib": "^2.6.0",
-    "typescript": "^5.1.6"
+    "typescript": "^5.1.6",
+    "vite": "^4.4.6"
   }
 }
