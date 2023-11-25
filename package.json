@@ -12,15 +12,15 @@
     "node": ">=18.0.0"
   },
   "files": [
-    "build/app.js",
-    "build/app.d.ts"
+    "build/index.js",
+    "build/index.d.ts"
   ],
-  "types": "build/app.d.ts",
+  "types": "build/index.d.ts",
   "repository": {
     "type": "git",
     "url": "https://github.com/rxy001/vite-plugin-preload.git"
   },
-  "main": "build/app.js",
+  "main": "build/index.js",
   "scripts": {
     "build": "tsc && rollup --config rollup.config.ts --configPlugin typescript",
     "prettier": "prettier -c --write ./src",

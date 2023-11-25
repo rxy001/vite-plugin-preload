@@ -14,8 +14,8 @@ export default () =>
     {
       input: "src/app.ts",
       output: {
-        dir: "build",
         format: "es",
+        file: "build/index.js",
       },
       plugins: [
         typescript({
@@ -27,8 +27,8 @@ export default () =>
       ],
     },
     {
-      input: "./build/types/app.d.ts",
-      output: [{ file: "build/app.d.ts", format: "es" }],
+      input: "./build/types/src/app.d.ts",
+      output: [{ file: "build/index.d.ts", format: "es" }],
       plugins: [dts()],
     },
   ])
